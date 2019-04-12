@@ -1,5 +1,5 @@
 {% set name = "vtki" %}
-{% set version = "0.18.0" %}
+{% set version = "0.18.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ab64d549c431514790450cdd1c059adef02591d8efc7545ef8a7ee6bd134a1fb
+  sha256: f4153294c0fc64e45e2217c0e7b217f9f8dcb865841e3a7f6aab662ffc3da909
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
