@@ -20,11 +20,13 @@ requirements:
     - pip
     - numpy
     - imageio
+    - appdirs
     - vtk <=8.1.2
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - imageio
+    - appdirs
     - vtk <=8.1.2
 
 test:
